@@ -5,3 +5,58 @@ h1 {
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
+
+nav {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 2px;
+}
+
+.hero-portfolio-btn,
+.hero-contact-btn {
+  padding: 10px 20px;
+  margin: 10px 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 18px;
+  border-color: #212529;
+  text-decoration: none;
+  color: black;
+  border: 1px solid;
+}
+
+.hero-portfolio-btn:hover,
+.hero-contact-btn:hover {
+  background-color: #212529;
+  transition: ease-in-out;
+  color: #fff;
+  transition-duration: 15ms;
+}
+.hero-section {
+  margin: 50px 50px;
+  padding: 50px 50px;
+}
+.hero-hello {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+}
+#navbarNav {
+  justify-content: flex-end;
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+}
