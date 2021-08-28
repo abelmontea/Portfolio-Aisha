@@ -1,7 +1,17 @@
+body {
+  overflow-x: hidden;
+}
 h1 {
   font-family: "Playfair Display", serif;
 }
 
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+}
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -17,7 +27,7 @@ nav {
   margin: 10px 20px;
   font-family: "Source Sans Pro", sans-serif;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 18px;
   border-color: #212529;
   text-decoration: none;
@@ -33,11 +43,11 @@ nav {
   transition-duration: 15ms;
 }
 .hero-section {
-  margin: 50px 50px;
-  padding: 50px 50px;
+  padding: 100px;
+  background: #ffffff;
 }
-.hero-hello {
-  max-width: 75%;
+.hero-picture {
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -59,4 +69,19 @@ nav {
 .hero-buttons {
   display: flex;
   justify-content: center;
+}
+
+.about-home-picture {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.about-section {
+  padding: 100px;
+  background: #c5d0db;
+}
+
+.lets-connect {
+  padding: 100px;
 }
