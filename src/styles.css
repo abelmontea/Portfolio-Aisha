@@ -14,6 +14,21 @@ h3 {
   font-family: "Playfair Display", serif;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
 p,
 a {
   font-family: "Source Sans Pro", sans-serif;
@@ -24,18 +39,18 @@ nav {
   letter-spacing: 2px;
 }
 
-.about-home-picture {
+.home-about-picture {
   max-width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.about-picture-section {
+.home-about-picture-section {
   display: flex;
   align-items: center;
 }
-.about-section {
+.home-about-section {
   padding: 100px;
   background: var(--secondary-color);
 }
@@ -51,7 +66,7 @@ nav {
   margin: 10px 20px;
   border-radius: 4px;
   background-color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
   border-color: var(--primary-color);
   text-decoration: none;
   color: var(--primary-color);
@@ -74,26 +89,36 @@ nav {
 }
 
 .hero-section,
-.lets-connect {
+.home-lets-connect,
+.about-me-introduction,
+.about-me-linkedin-section {
   padding: 100px;
 }
 
-.introduction {
+.introduction,
+.about-me-introduction,
+.about-me-linkedin-section {
   display: flex;
   align-items: center;
 }
 
-.learn-more-link {
+.home-learn-more-link {
   color: var(--primary-color);
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
 
-.learn-more-link:hover {
+.home-learn-more-link:hover {
   transition: ease-in-out;
   text-decoration: underline;
   color: var(--secondary-accent-color);
+}
+
+.linkedin-picture {
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 .social-CTA {
@@ -116,25 +141,27 @@ nav {
   justify-content: flex-end;
 }
 
-@media (max-width: 992px) {
-  .about-picture-section {
+@media (max-width: 1200px) {
+  .home-about-picture-section {
     display: none;
   }
-  .about-section {
+}
+@media (max-width: 992px) {
+  .home-about-section {
     padding: 60px;
   }
   .social-CTA {
     font-size: 16px;
   }
   .hero-section,
-  .lets-connect {
+  .home-lets-connect {
     padding: 50px;
   }
 }
 
 @media (max-width: 901px) {
-  .about-section,
-  .lets-connect {
+  .home-about-section,
+  .home-lets-connect {
     padding: 50px;
   }
   .introduction {
@@ -158,13 +185,16 @@ nav {
   .social-CTA {
     display: none;
   }
+  h2 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 1.1em;
+    font-size: 23px;
   }
-  .about-section {
+  .home-about-section {
     padding: 30px 50px;
   }
   .desktop-description {
@@ -177,10 +207,10 @@ nav {
   .hero-contact-btn {
     padding: 5px 10px;
   }
-  .learn-more-link {
+  .home-learn-more-link {
     font-size: 18px;
   }
-  .lets-connect {
+  .home-lets-connect {
     padding: 30px;
   }
 }
