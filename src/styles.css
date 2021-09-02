@@ -30,7 +30,8 @@ p {
   font-size: 18px;
 }
 p,
-a {
+a,
+small {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -39,7 +40,26 @@ nav {
   letter-spacing: 2px;
 }
 
-.home-about-picture {
+.more-recommendations {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.more-recommendations-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.more-recommendations-link:hover {
+  color: var(--secondary-accent-color);
+}
+.about-socials {
+  color: var(--primary-color);
+}
+.about-socials:hover {
+  color: var(--secondary-accent-color);
+}
+.home-about-picture,
+.contact-me-picture {
   max-width: 50%;
   height: auto;
   display: block;
@@ -50,8 +70,9 @@ nav {
   display: flex;
   align-items: center;
 }
-.home-about-section {
-  padding: 100px;
+.home-about-section,
+.about-me-introduction,
+.about-footer {
   background: var(--secondary-color);
 }
 
@@ -81,23 +102,18 @@ nav {
   transition-duration: 20ms;
 }
 
-.hero-picture {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
 .hero-section,
 .home-lets-connect,
 .about-me-introduction,
-.about-me-linkedin-section {
+.about-me-linkedin-section,
+.home-about-section {
   padding: 100px;
 }
 
 .introduction,
 .about-me-introduction,
-.about-me-linkedin-section {
+.about-me-linkedin-section,
+.contact-me-blurb {
   display: flex;
   align-items: center;
 }
@@ -145,6 +161,9 @@ nav {
   .home-about-picture-section {
     display: none;
   }
+  .about-me-introduction-picture {
+    max-width: 50%;
+  }
 }
 @media (max-width: 992px) {
   .home-about-section {
@@ -156,6 +175,12 @@ nav {
   .hero-section,
   .home-lets-connect {
     padding: 50px;
+  }
+  .about-me-introduction-picture {
+    display: none;
+  }
+  .about-me-introduction-blurb {
+    text-align: center;
   }
 }
 
@@ -212,5 +237,15 @@ nav {
   }
   .home-lets-connect {
     padding: 30px;
+  }
+  .about-me-recommendation-picture {
+    display: none;
+  }
+  .about-me-introduction,
+  .about-me-linkedin-section {
+    padding: 75px;
+  }
+  .about-me-header {
+    font-size: 43px;
   }
 }
