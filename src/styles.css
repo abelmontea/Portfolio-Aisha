@@ -47,18 +47,17 @@ nav {
   font-weight: bold;
 }
 
-.more-recommendations-link {
+.examples-link {
   color: var(--primary-color);
   text-decoration: none;
 }
-.more-recommendations-link:hover {
+
+.examples-link,
+.about-socials:hover {
   color: var(--secondary-accent-color);
 }
 .about-socials {
   color: var(--primary-color);
-}
-.about-socials:hover {
-  color: var(--secondary-accent-color);
 }
 .home-about-picture,
 .contact-me-picture {
@@ -127,7 +126,7 @@ nav {
 .about-me-linkedin-section,
 .home-about-section,
 .portfolio-header {
-  padding: 100px;
+  padding: 50px;
 }
 
 .introduction,
@@ -139,14 +138,16 @@ nav {
   align-items: center;
 }
 
-.home-learn-more-link {
+.home-learn-more-link,
+.more-recommendations-link {
   color: var(--primary-color);
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
 
-.home-learn-more-link:hover {
+.home-learn-more-link,
+.more-recommendations-link:hover {
   transition: ease-in-out;
   text-decoration: underline;
   color: var(--secondary-accent-color);
@@ -262,9 +263,11 @@ nav {
   .about-me-recommendation-picture {
     display: none;
   }
-  .about-me-introduction,
+  .about-me-introduction {
+    padding: 20px;
+  }
   .about-me-linkedin-section {
-    padding: 75px;
+    padding: 30px;
   }
   .about-me-header {
     font-size: 43px;
