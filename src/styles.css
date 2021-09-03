@@ -63,7 +63,7 @@ nav {
   margin: 0 auto;
 }
 
-.home-about-picture-section {
+.hero-picture-section {
   display: flex;
   align-items: center;
 }
@@ -202,10 +202,6 @@ nav {
   .social-CTA {
     font-size: 16px;
   }
-  .hero-section,
-  .lets-connect {
-    padding: 50px;
-  }
   .about-me-introduction-picture {
     display: none;
   }
@@ -218,18 +214,6 @@ nav {
 }
 
 @media (max-width: 901px) {
-  .introduction {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .hero-break,
-  .hero-picture-section {
-    display: none;
-  }
-  .hero-section {
-    padding: 90px;
-  }
   .seo-short {
     display: none;
   }
@@ -254,6 +238,15 @@ nav {
 }
 
 @media (max-width: 576px) {
+  .introduction {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-break,
+  .hero-picture-section {
+    display: none;
+  }
   .contact-header h1 {
     font-size: 35px;
   }
@@ -276,9 +269,7 @@ nav {
   .desktop-description {
     display: none;
   }
-  .hero-section {
-    padding: 100px 30px;
-  }
+
   .hero-portfolio-btn,
   .hero-contact-btn {
     padding: 5px 10px;
