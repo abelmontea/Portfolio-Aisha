@@ -186,9 +186,6 @@ nav {
   }
 }
 @media (max-width: 992px) {
-  .home-about-section {
-    padding: 60px;
-  }
   .social-CTA {
     font-size: 16px;
   }
@@ -205,10 +202,6 @@ nav {
 }
 
 @media (max-width: 901px) {
-  .home-about-section,
-  .home-lets-connect {
-    padding: 50px;
-  }
   .introduction {
     display: block;
     margin: 0 auto;
@@ -239,7 +232,14 @@ nav {
   h3 {
     font-size: 20px;
   }
-  .home-about-section {
+  .d-block {
+    max-height: 300px;
+  }
+  .light-text-background {
+    margin: 10px -35px;
+  }
+  .home-about-section,
+  .portfolio-header {
     padding: 30px 35px;
   }
   .desktop-description {
