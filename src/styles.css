@@ -52,10 +52,6 @@ nav {
   text-decoration: none;
 }
 
-.examples-link,
-.about-socials:hover {
-  color: var(--secondary-accent-color);
-}
 .about-socials {
   color: var(--primary-color);
 }
@@ -146,8 +142,10 @@ nav {
   text-decoration: none;
 }
 
-.home-learn-more-link,
-.more-recommendations-link:hover {
+.home-learn-more-link:hover,
+.more-recommendations-link:hover,
+.examples-link:hover,
+.about-socials:hover {
   transition: ease-in-out;
   text-decoration: underline;
   color: var(--secondary-accent-color);
@@ -239,10 +237,10 @@ nav {
 
 @media (max-width: 576px) {
   h3 {
-    font-size: 23px;
+    font-size: 20px;
   }
   .home-about-section {
-    padding: 30px 50px;
+    padding: 30px 35px;
   }
   .desktop-description {
     display: none;
@@ -264,10 +262,10 @@ nav {
     display: none;
   }
   .about-me-introduction {
-    padding: 20px;
+    padding: 30px 20px;
   }
   .about-me-linkedin-section {
-    padding: 30px;
+    padding: 30px 35px;
   }
   .about-me-header {
     font-size: 43px;
