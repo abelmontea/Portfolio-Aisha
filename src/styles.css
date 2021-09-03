@@ -25,6 +25,7 @@ h2 {
 h3 {
   font-size: 25px;
 }
+
 p {
   font-size: 18px;
 }
@@ -108,7 +109,8 @@ nav {
 .home-learn-more-link:hover,
 .more-recommendations-link:hover,
 .examples-link:hover,
-.about-socials:hover {
+.about-socials:hover,
+.open-source-link:hover {
   transition: ease-in-out;
   text-decoration: underline;
   color: var(--secondary-accent-color);
@@ -138,6 +140,10 @@ nav {
 }
 .navbar-brand {
   font-weight: bolder;
+}
+.open-source-link {
+  color: var(--primary-color);
+  font-family: "Playfair Display", serif;
 }
 .skillset {
   display: flex;
