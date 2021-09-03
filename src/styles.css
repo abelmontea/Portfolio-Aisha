@@ -8,6 +8,7 @@
 body {
   overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -15,19 +16,15 @@ h4,
 h5 {
   font-family: "Playfair Display", serif;
 }
-
 h1 {
   font-size: 48px;
 }
-
 h2 {
   font-size: 35px;
 }
-
 h3 {
   font-size: 25px;
 }
-
 p {
   font-size: 18px;
 }
@@ -36,53 +33,25 @@ a,
 small {
   font-family: "Source Sans Pro", sans-serif;
 }
-
 nav {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 2px;
 }
-
-.more-recommendations {
-  font-size: 20px;
-  font-weight: bold;
+.about-socials,
+.light-text {
+  color: var(--primary-color);
 }
-
 .examples-link {
   color: var(--primary-color);
   text-decoration: none;
 }
-
-.about-socials {
-  color: var(--primary-color);
-}
-.home-about-picture,
-.contact-me-picture {
-  max-width: 50%;
-  height: auto;
-  display: block;
+.d-block {
   margin: 0 auto;
+  max-height: 500px;
 }
-
-.hero-picture-section {
-  display: flex;
-  align-items: center;
-}
-.home-about-section,
-.about-me-introduction,
-.dark-footer,
-.portfolio-header {
-  background: var(--secondary-color);
-}
-
 .hero-buttons {
   display: flex;
   justify-content: center;
-}
-
-.skillset {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .hero-portfolio-btn,
 .hero-contact-btn {
@@ -96,12 +65,6 @@ nav {
   color: var(--primary-color);
   border: 1px solid;
 }
-
-.d-block {
-  margin: 0 auto;
-  max-height: 500px;
-}
-
 .hero-portfolio-btn:hover,
 .hero-contact-btn:hover {
   background-color: var(--primary-color);
@@ -109,18 +72,10 @@ nav {
   color: #fff;
   transition-duration: 20ms;
 }
-
-.light-text-background {
-  background-color: #ffffff;
-  opacity: 0.9;
-  margin: 10px 100px;
-  border-radius: 5px;
+.hero-picture-section {
+  display: flex;
+  align-items: center;
 }
-
-.light-text {
-  color: var(--primary-color);
-}
-
 .hero-section,
 .lets-connect,
 .about-me-introduction,
@@ -130,16 +85,19 @@ nav {
 .contact-header {
   padding: 50px;
 }
-
-.introduction,
-.about-me-introduction,
-.about-me-linkedin-section,
-.contact-me-blurb,
-.portfolio-header {
-  display: flex;
-  align-items: center;
+.home-about-picture,
+.contact-me-picture {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
-
+.home-about-section,
+.about-me-introduction,
+.dark-footer,
+.portfolio-header {
+  background: var(--secondary-color);
+}
 .home-learn-more-link,
 .more-recommendations-link {
   color: var(--primary-color);
@@ -147,7 +105,6 @@ nav {
   font-weight: bold;
   text-decoration: none;
 }
-
 .home-learn-more-link:hover,
 .more-recommendations-link:hover,
 .examples-link:hover,
@@ -156,60 +113,81 @@ nav {
   text-decoration: underline;
   color: var(--secondary-accent-color);
 }
-
+.introduction,
+.about-me-introduction,
+.about-me-linkedin-section,
+.contact-me-blurb,
+.portfolio-header {
+  display: flex;
+  align-items: center;
+}
+.light-text-background {
+  background-color: #ffffff;
+  opacity: 0.9;
+  margin: 10px 100px;
+  border-radius: 5px;
+}
 .linkedin-picture {
   max-height: 500px;
   display: block;
   margin: 0 auto;
 }
-
-.social-CTA {
-  margin-top: 8px;
+.more-recommendations {
   font-size: 20px;
+  font-weight: bold;
 }
-
 .navbar-brand {
   font-weight: bolder;
 }
-
+.skillset {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .socials {
   color: var(--accent-color);
 }
 .socials:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-accent-color);
 }
-
+.social-CTA {
+  margin-top: 8px;
+  font-size: 20px;
+}
 #navbarNav {
   justify-content: flex-end;
 }
+
 @media (min-width: 1201px) {
   .seo-short {
     display: none;
   }
 }
+
 @media (max-width: 1200px) {
-  .home-about-picture-section {
-    display: none;
-  }
   .about-me-introduction-picture {
     max-width: 50%;
+  }
+  .home-about-picture-section {
+    display: none;
   }
   .seo-short {
     display: none;
   }
 }
+
 @media (max-width: 992px) {
-  .social-CTA {
-    font-size: 16px;
+  .about-me-introduction-blurb {
+    text-align: center;
   }
   .about-me-introduction-picture {
     display: none;
   }
-  .about-me-introduction-blurb {
-    text-align: center;
-  }
   .seo-short {
     display: none;
+  }
+  .social-CTA {
+    font-size: 16px;
   }
 }
 
@@ -220,14 +198,11 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .fa-5x {
-    font-size: 3em;
-  }
-  .social-CTA {
-    display: none;
-  }
   h2 {
     font-size: 32px;
+  }
+  .fa-5x {
+    font-size: 3em;
   }
   .seo {
     display: none;
@@ -235,16 +210,25 @@ nav {
   .seo-short {
     display: block;
   }
+  .social-CTA {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
-  .introduction {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
+  h3 {
+    font-size: 20px;
   }
-  .hero-break,
-  .hero-picture-section {
+  .about-me-header {
+    font-size: 43px;
+  }
+  .about-me-introduction {
+    padding: 30px 20px;
+  }
+  .about-me-linkedin-section {
+    padding: 30px 35px;
+  }
+  .about-me-recommendation-picture {
     display: none;
   }
   .contact-header h1 {
@@ -253,46 +237,39 @@ nav {
   .contact-header {
     padding: 20px 10px;
   }
-  h3 {
-    font-size: 20px;
+  .desktop-description {
+    display: none;
   }
   .d-block {
     max-height: 300px;
   }
-  .light-text-background {
-    margin: 10px -35px;
+  .hero-break,
+  .hero-picture-section {
+    display: none;
+  }
+  .hero-portfolio-btn,
+  .hero-contact-btn {
+    padding: 5px 10px;
   }
   .home-about-section,
   .portfolio-header {
     padding: 30px 35px;
   }
-  .desktop-description {
-    display: none;
-  }
-
-  .hero-portfolio-btn,
-  .hero-contact-btn {
-    padding: 5px 10px;
-  }
   .home-learn-more-link {
     font-size: 18px;
+  }
+  .introduction {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
   .lets-connect {
     padding: 30px;
   }
+  .light-text-background {
+    margin: 10px -35px;
+  }
   .seo-short {
     display: block;
-  }
-  .about-me-recommendation-picture {
-    display: none;
-  }
-  .about-me-introduction {
-    padding: 30px 20px;
-  }
-  .about-me-linkedin-section {
-    padding: 30px 35px;
-  }
-  .about-me-header {
-    font-size: 43px;
   }
 }
