@@ -73,11 +73,17 @@ nav {
   color: #fff;
   transition-duration: 20ms;
 }
-.hero-picture-section {
+.hero-picture-section,
+.home-about-picture-section,
+.home-porfolio-picture,
+.home-portfolio-section {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 .hero-section,
+.home-portfolio-section,
 .lets-connect,
 .about-me-introduction,
 .about-me-linkedin-section,
@@ -89,11 +95,12 @@ nav {
 .home-about-picture,
 .contact-me-picture {
   max-width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
-.home-about-section,
+
+.home-portfolio-picture {
+  max-width: 35%;
+}
+.home-portfolio-section,
 .about-me-introduction,
 .dark-footer,
 .portfolio-header {
@@ -115,6 +122,7 @@ nav {
   text-decoration: underline;
   color: var(--secondary-accent-color);
 }
+
 .introduction,
 .about-me-introduction,
 .about-me-linkedin-section,
@@ -176,6 +184,9 @@ nav {
   }
   .home-about-picture-section {
     display: none;
+  }
+  .home-about-section-text {
+    text-align: right;
   }
   .seo-short {
     display: none;
@@ -250,7 +261,8 @@ nav {
     max-height: 300px;
   }
   .hero-break,
-  .hero-picture-section {
+  .hero-picture-section,
+  .home-porfolio-picture {
     display: none;
   }
   .hero-portfolio-btn,
